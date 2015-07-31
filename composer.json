@@ -1,0 +1,27 @@
+{
+  "name": "rabble-rouser/support",
+  "description": "Support",
+  "keywords": ["rabble+rouser", "rabble", "rouser", "support"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Coats",
+      "email": "jcoats@rabbleandrouser.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rabble\\Support\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
