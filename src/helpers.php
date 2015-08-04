@@ -109,7 +109,7 @@ if (!function_exists('date_range')) {
      */
     function date_range($start, $end)
     {
-        return Date::createDateRangeArray($start, $end)
+        return Date::createDateRangeArray($start, $end);
     }
 }
 
