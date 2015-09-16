@@ -78,12 +78,11 @@ class HtmlFormatter
             $isStandalone = false;
 
             $currentElement = trim($element);
-
             if (strpos($currentElement, '<!') === 0) {
                 $isComment = true;
             } else if (strpos($currentElement, '</') === 0) {
                 $isClosing = true;
-            } else if (preg_match('/\/>$/', $currentElement)) {
+            } else if (preg_match('/\/>$/', $currentElement) || strpos($currentElement, '<input') === 0) {
                 $isStandalone = true;
             } else if (strpos($currentElement, '<') === 0) {
                 $isOpening = true;
