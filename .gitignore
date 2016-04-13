@@ -3,8 +3,8 @@
 Thumbs.db
 
 # Composer
-#/vendor
-#composer.lock
+/vendor
+composer.lock
 
 # PHPStorm
 /.idea
